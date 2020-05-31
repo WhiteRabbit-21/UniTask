@@ -8,7 +8,7 @@ dormin = 0;
 function fun2(){
         var sel = document.getElementById('dorm').selectedIndex;
         var options = document.getElementById('dorm').options;
-        faculty= options[].text;
+        dormin = options[].text;
     };
 
 $(document).ready(function() {
