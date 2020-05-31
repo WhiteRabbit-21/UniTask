@@ -6,8 +6,8 @@ var faculty = 0;
     }; 
 dormin = 0;
 function fun2(){
-        var sel = document.getElementById('dorm').selectedIndex;
-        var options = document.getElementById('dorm').options;
+        var sel = document.getElementById('selectDorm').selectedIndex;
+        var options = document.getElementById('selectDorm').options;
         dormin = options[].text;
     };
 
