@@ -89,7 +89,7 @@
             <label for="reg">Дата заселення:</label><br>
             <input type="date" name="reg" id="reg"><br>
 
-	    <label for="dorm">Гуртожиток:</label><br>
+	    <label for="selectDorm">Гуртожиток:</label><br>
             <select id="selectDorm" class="selectDorm" onchange="fun2()">
 	    <option value="SelectVar">Виберіть гутожиток</option>
             <option value=”Fst”>Перший</option>

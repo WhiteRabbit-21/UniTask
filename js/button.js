@@ -98,7 +98,7 @@ $(document).ready(function() {
         $.ajax({
             type: "POST",
             url: "php/addStudents.php",
-            data: {name: nameValue, lastName: lastNameValue, secondName: secondNameValue, gender: genderValue, birth: birthValue, faculty: facultyValue, groupe: groupeValue, phone: phoneValue, parentsPhone: parentsPhoneValue, room: roomValue, reg: dateOfreg, dormin: dorminVal }
+            data: {name: nameValue, lastName: lastNameValue, secondName: secondNameValue, gender: genderValue, birth: birthValue, faculty: facultyValue, groupe: groupeValue, phone: phoneValue, parentsPhone: parentsPhoneValue, room: roomValue, reg: dateOfreg, selectDorm: dorminVal }
         })
         .done(function(msg){
             alert("Студент зареєстрований!");

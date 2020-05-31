@@ -16,7 +16,7 @@ $data = [
 ];
 
 $pdo = new PDO('mysql:host=localhost; dbname=university', 'mysql', 'mysql');
-$sql = 'INSERT INTO students (firstName, lastName, secondName, gender, dateOfBirth, phoneNumber, parentsPhoneNumber, faculty, groupe, room, dateOfReg, dorm) VALUES (:rName, :lastName, :secondName, :gender, :birth, :phone, :parentsPhone, :faculty, :groupe, :room, :dateReg, :dorm)';
+$sql = 'INSERT INTO students (firstName, lastName, secondName, gender, dateOfBirth, phoneNumber, parentsPhoneNumber, faculty, groupe, room, dateOfReg, dormitory) VALUES (:rName, :lastName, :secondName, :gender, :birth, :phone, :parentsPhone, :faculty, :groupe, :room, :dateReg, :dorm)';
 $statement = $pdo->prepare($sql);
 $result = $statement->execute($data);
 var_dump($result);
