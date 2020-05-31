@@ -6,9 +6,9 @@ var faculty = 0;
     }; 
 dormin = 0;
 function fun2(){
-        var sel = document.getElementById('selectDorm').selectedIndex;
-        var options = document.getElementById('selectDorm').options;
-        dormin = options[].text;
+        var sel = document.getElementById('dorm').selectedIndex;
+        var options = document.getElementById('dorm').options;
+        dormin = options[sel].text;
     };
 
 $(document).ready(function() {
@@ -98,7 +98,7 @@ $(document).ready(function() {
         $.ajax({
             type: "POST",
             url: "php/addStudents.php",
-            data: {name: nameValue, lastName: lastNameValue, secondName: secondNameValue, gender: genderValue, birth: birthValue, faculty: facultyValue, groupe: groupeValue, phone: phoneValue, parentsPhone: parentsPhoneValue, room: roomValue, reg: dateOfreg, dormin:dorminVal }
+            data: {name: nameValue, lastName: lastNameValue, secondName: secondNameValue, gender: genderValue, birth: birthValue, faculty: facultyValue, groupe: groupeValue, phone: phoneValue, parentsPhone: parentsPhoneValue, room: roomValue, reg: dateOfreg, dormin: dorminVal }
         })
         .done(function(msg){
             alert("Студент зареєстрований!");
