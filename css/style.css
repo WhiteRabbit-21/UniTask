@@ -1,7 +1,7 @@
 body {
     margin: 20px;
     background-color: lightsteelblue;
-    flex-direction: column;
+    /*flex-direction: column;*/
 }
 
 
@@ -11,6 +11,8 @@ div.container {
     padding: 5px;
     margin: 5px;
     background-color: lightyellow;
+    
+    
 }
 
 /* АйДишники */
@@ -18,10 +20,10 @@ div.container {
     display: flex;
 }
 
-#menu{
-    margin-left:175px;
+#menu {
+    /*margin-left:175px;*/
     display: flex;
-    
+    margin-left: auto;
 }
 
 #workspace{
@@ -29,8 +31,8 @@ div.container {
 }
 
 #findField {
-    padding: 20px;
-    font-size: 20px;
+    font-size: 20px; 
+    
 }
 
 #newStudent {
@@ -43,30 +45,30 @@ div.container {
 }
 
 /* Кнопки, поля ввода*/
-input{
+input {
     margin-bottom: 10px;
-    width:220px;
+    
 }
 
 #menuButton {
 
     font-size: 25px;
     width: 125px;
-    height: 75px;
+  
     text-align: center;
     background-color: lightyellow;
     border-bottom: 1px solid black;
-    margin: 10px;
+    margin: 5px 10px 20px 10px;
 }
 
 h2 {
-    margin-left:50px;
+    margin-left:10px;
 }
 
 div.But:hover{color:grey;}
 
 #footer {
-    margin-left: auto;
+    margin: auto;
     width: 100%;
     background-color: aqua;
     height: 100%;
@@ -87,15 +89,29 @@ txt:hover {
 txtsize{
     font-size:23px;
 }
-
-
+#infoUser {
+    
+    font-size:18px;
+    /*display:flex;*/
+}
+.name{
+    
+    width:250px;
+}
 .find{
-    width:100%;
+    width: 257px;
 }
-smth{
-    font-size:17px;
-    padding-left:5px;
+button {
+    margin-bottom: 10px;
+    
+    width: 257px;
 }
+#man,#woman{
+    width:30px;
+
+}
+
+
 
 
 

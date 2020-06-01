@@ -10,8 +10,7 @@
 	T2Caption{font-size:25px;}
 	.Centr{
 		text-align:left;}
-	#studentsTables{margin:25px;
-	}
+	#studentsTables{margin:25px;}
 	#studentsTittleTH{padding: 10px;}
 	
 	</style>
