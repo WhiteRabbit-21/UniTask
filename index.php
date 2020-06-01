@@ -27,9 +27,9 @@
 	<img src="LogoEU.png" width="90" alt="LOGO"></div>
 	<h2>База даних студентів гуртожитку </br> Європейського університету</h2>
         <div id="menu">
-            <div id="menuButton"  class="mBtnMain But"><p>Головна</p></div>
-            <div id="menuButton"  class="mBtnCtrl But"><p>Керування</p></div>
-            <div id="menuButton" class="mBtnExit But"><p>Вихід</p></div>
+            <div id="menuButton"  class="mBtnMain But">Головна</div>
+            <div id="menuButton"  class="mBtnCtrl But">Керування</div>
+            <div id="menuButton" class="mBtnExit But">Вихід</div>
         </div> <!-- Все кнопки в меню обрабатываются в button.js -->
     </div>
     <div id="workspace">
@@ -43,8 +43,8 @@
                 ?> <!-- Функция выводит ФИО авторизированого пользователя на экран. Берет данные из БД -->
             </div>
             <div id="findField" class="container Find">
-                <label for="name">Введіть прізвище та ім`я: </label><br>
-                <input type="text" name="name" class="name"></input><br>
+                Введіть прізвище та ім`я:
+                <input type="text" name="name" class="name"></input>
                 <button class="find">Пошук</button> 
             </div> <!-- Поиск студента за ФИО. Обрабатывается в button.js -->
         </div>
@@ -63,42 +63,47 @@
                 <tr><td>Факультет:</td><td id='pInfo'></td></tr>
             </table> <!-- Просто поле с личным делом, где отображается информация по поиску студента. Заметка, после того, как была нажата кнопка "Пошук", данный div полностью переписывается на новый, в котором остаются поля, но добавляется информация. -->
         </div>
+
         <div id="commonList" class="container"> <!-- Информация в этом блоке обновляется автоматически из-за скрипта timer.js, который каждую минуту(наверное) обновляет и берет инфо через php-файл commonList  -->
         </div> 
+
         <div id="newStudent" class="container"> <!-- Данный div появляется когда пользователь нажимает кнопку "Керування", предыдущие блоки пропадают. -->
-            <p><b><txtsize>Зареєструвати студента</txtsize></b></p>
-            <label for="nameStud">Ім`я</label><br>
-            <input type="text" name="nameStud" class="nameStud"><br>
+            <b><txtsize>Зареєструвати студента</txtsize></b>
+            <p>Ім`я</p>
+            <input type="text" name="nameStud" class="nameStud">
 
-            <label for="lastName">Призвіще</label><br>
-            <input type="text" name="lastName" class="lastName"><br>
+            <p>Призвіще</p>
+            <input type="text" name="lastName" class="lastName">
 
-            <label for="secondName">По-Батькові</label><br>
-            <input type="text" name="secondName" class="secondName"><br>
+            <p>По-Батькові</p>
+            <input type="text" name="secondName" class="secondName">
 
-            <label for="gender">Стать:</label><br>
+            <p>Стать:</p>
 
-            <label for="man">Чоловіча</label>
+            <label>Чоловіча
             <input type="checkbox" name="man" id="man">
-            <label for="woman">Жіноча</label>
-            <input type="checkbox" name="woman" id="woman"><br>
+	    </label>
 
-            <label for="birth">Дата народження:</label><br>
-            <input type="date" name="birth" id="birth"><br>
+            <label>Жіноча
+            <input type="checkbox" name="woman" id="woman">
+	    </label>
 
-            <label for="reg">Дата заселення:</label><br>
-            <input type="date" name="reg" id="reg"><br>
+            <p>Дата народження:</p>
+            <input type="date" name="birth" id="birth">
 
-	    <label for="selectDorm">Гуртожиток:</label><br>
+            <p>Дата заселення:</p>
+            <input type="date" name="reg" id="reg">
+
+	    <p>Гуртожиток:</p>
             <select id="selectDorm" class="selectDorm" onchange="fun2()">
 	    <option value="SelectVar">Виберіть гутожиток</option>
             <option value=”Fst”>Перший</option>
             <option value=”Snd”>Другий</option>
             <option value=”Thd”>Третій</option>
-            </select><br>
+            </select>
 	
 
-            <label for="selectFaculty">Факультет</label><br>
+            <p>Факультет</p>
             <select id="selectFaculty" class="selectFaculty" onchange="fun1()">
 		<option value="SelectVar">Виберіть факультет</option>
                 <option value=”FIST”>ФІСТ</option>
@@ -107,19 +112,20 @@
                 <option value="UF">ЮФ</option>
                 <option value="BK">БК</option>
                 <option value="other">Інший ВНЗ</option>
-            </select><br>
+            </select>
 
-            <label for="groupe">Група</label><br>
-            <input type="text" id="groupe" class="groupe"><br>
+            <p>Група</p>
+            <input type="text" id="groupe" class="groupe">
 
-            <label for="phone">Номер телефону</label><br>
-            <input type="text" name="phone" class="phone"><br>
+            <p>Номер телефону</p>
+            <input type="text" name="phone" class="phone">
 
-            <label for="parentsPhone">Номер телефон батьків</label><br>
-            <input type="text" name="parentsPhone" class="parentsPhone"><br>
+            <p>Номер телефон батьків</p>
+            <input type="text" name="parentsPhone" class="parentsPhone">
 
-            <label for="room">Кімната</label><br>
-            <input type="text" name="room" class="room"><br>
+            <p>Кімната</p>
+            <input type="text" name="room" class="room">
+
             <button class="create">Додати</button>
         </div>
     </div> <!-- Всю новую информацию обрабатывает button.js -->
