@@ -62,8 +62,9 @@ while($row=mysqli_fetch_assoc($query))
     <style>
 	div.mlogin {
     	text-align:center;
-	margin-top:10%;}
-	body{background:aqua;}
+	margin-top:10%;
+	}
+	body{background-color:PowderBlue;	}
 	h1{font-size:40px;}
 	p{font-size:25px;}
 	input{width:250px;}
@@ -72,7 +73,7 @@ while($row=mysqli_fetch_assoc($query))
     
 </head>
 <body>
-<div class="container mlogin">
+<div class="container mlogin picture">
 <div id="login">
 <h1>Вхід до бази даних</h1>
 <form action="" id="loginform" method="post"name="loginform">

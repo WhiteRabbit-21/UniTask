@@ -19,11 +19,9 @@ div.container {
 }
 
 #menu {
-    
     display: flex;
     margin-left: auto;
-    
-}
+    }
 
 #workspace {
     display: flex;
@@ -36,12 +34,14 @@ div.container {
 }
 
 #newStudent {
-    display: flex;
-    flex-direction:column;
-    padding-left: 25px;
-    padding-right: 25px;
+    display: none;
+    
+    position:relative;
+    left:40%;
+
+    padding: 25px;
+    
     width: 250px;
-    margin-left: 40%;
     font-size: 17px;
 
 }
@@ -62,13 +62,7 @@ input {
     height: 40px;
     margin-right: 20px;
 }
-/*But {
-    font-size: 25px;
-}
 
-#idmenuButton {
-    font-size: 25px;
-}*/
 
 h2 {
     margin-left: 10px;
@@ -102,17 +96,13 @@ txt {
 
 txtsize {
     font-size: 23px;
+    margin-top: 5px;
 }
 
 #infoUser {
-    font-size: 18px;
+    font-size: 20px;
+
     /*display:flex;*/
-}
-
-.name {
-}
-
-.find {
 }
 
 button {
@@ -121,18 +111,15 @@ button {
     width: inherit;
     
     
-    margin-bottom: 5px;
-    margin-top: 5px;
+    
+    margin-top: 10px;
 }
 
 #man, #woman {
     width: 30px;
 }
-.create {
-   
-}
 
 p{
-       margin: 2px;
+       margin: 5px;
 }
 
