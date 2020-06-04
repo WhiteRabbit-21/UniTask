@@ -23,5 +23,6 @@ printf("
     <tr><td>Дата заселелення:</td><td id='pInfo'>" .$row['dateOfReg'] . "</td></tr>
     <tr><td>Факультет:</td><td id='pInfo'>" .$row['faculty'] . "</td></tr>
 </table>
+<button class='delete'>Видалити </button>
 ");
 ?>
